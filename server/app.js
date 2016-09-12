@@ -36,4 +36,9 @@ app.get('/', function(req, res){
 
 //set public folder for use
 app.use(express.static('public'));
+//use body parser
 app.use(urlEncodedParser);
+
+app.post('/', function(req, res){
+  console.log("the server recieved", req.body);
+});

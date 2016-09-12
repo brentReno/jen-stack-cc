@@ -10,5 +10,13 @@ $(document).ready(function(){
     console.log("Joke info = ", author, setup, punch);
     joke ={whoseJoke: author, jokeQuestion: setup, punchLine: punch};
     console.log(joke);
+    $.ajax({
+            type: "POST",
+            url: "/",
+            data: joke,
+            success: function(data){
+              console.log('ajax success:', data);
+            }//end success
+          });//end AJAX
   });//end submit on click
 });// end doc ready
