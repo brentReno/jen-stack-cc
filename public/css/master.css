@@ -1,0 +1,24 @@
+h2{
+  text-align: center;
+  font-size: 36px;
+  margin-top: -25px;
+}
+.jumbotron{
+  height:40px;
+  border: 2px solid #cccccc;
+  width:90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+h4{
+  text-align: center;
+  font-size: 24px;
+}
+p{
+  text-align: center;
+}
+
+.jokeZone{
+  text-align: center;
+
+}
