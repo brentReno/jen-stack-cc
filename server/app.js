@@ -1,5 +1,5 @@
 // initial jokes provided by the client
-jokes = [
+var jokes = [
   {
     whoseJoke: "Huck",
     jokeQuestion: "What's the difference between roast beef and pea soup?",
@@ -40,5 +40,10 @@ app.use(express.static('public'));
 app.use(urlEncodedParser);
 
 app.post('/', function(req, res){
+  //check for server to recieve joke
   console.log("the server recieved", req.body);
+  //add joke to jokes array
+  jokes.push(req.body);
+  //send jokes array back to the client
+  res.send(jokes);
 });
