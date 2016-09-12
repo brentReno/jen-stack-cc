@@ -16,6 +16,13 @@ $(document).ready(function(){
             data: joke,
             success: function(data){
               console.log('ajax success:', data);
+              for (var i = 0; i < data.length; i++) {
+                var name = data[ i ].whoseJoke;
+                var setup = data[ i ].jokeQuestion;
+                var punchline = data[ i ]. punchLine;
+                var jokeInfo = "<h4>"+name+"'s Joke:</h4><p>"+ setup + "</p><p>" + punchline + "</p>";
+                $("#displayJokes").append(jokeInfo);
+              }
             }//end success
           });//end AJAX
   });//end submit on click
