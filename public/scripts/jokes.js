@@ -20,8 +20,9 @@ $(document).ready(function(){
                 var name = data[ i ].whoseJoke;
                 var setup = data[ i ].jokeQuestion;
                 var punchline = data[ i ]. punchLine;
-                var jokeInfo = "<h4>"+name+"'s Joke:</h4><p>"+ setup + "</p><p>" + punchline + "</p>";
+                var jokeInfo = "<h4>"+name+"'s Joke:</h4><p class='setup'>"+ setup + "</p><p class='punchline'>" + punchline + "</p>";
                 $("#displayJokes").append(jokeInfo);
+                $(".display").css("border", "2px solid #cccccc");
               }
             }//end success
           });//end AJAX

@@ -6,7 +6,7 @@ h2{
 .jumbotron{
   height:40px;
   border: 2px solid #cccccc;
-  width:90%;
+  width:75%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -20,5 +20,18 @@ p{
 
 .jokeZone{
   text-align: center;
-
+}
+.setup{
+  font-size: 16px;
+  font-weight: bold;
+}
+.punchline{
+  font-size: 14px;
+  font-style: italic;
+  color: #00aaaa;
+}
+.display{
+  background-color: #eeeeee;
+  margin-top:10px;
+  width: 50%;
 }
